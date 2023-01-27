@@ -2,7 +2,7 @@ name = "Georgiy"
 age = 27
 age = int(age) - 18
 print(age)
-print('georgiy starshe na', age, 'moloje georgia na ', age)15
+print('georgiy starshe na', age, 'moloje georgia na ', age)
 
 
 

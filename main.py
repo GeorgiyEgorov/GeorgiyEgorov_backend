@@ -1,39 +1,38 @@
-name = "Georgiy"
-age = 27
-age = int(age) - 18
-print(age)
-print('georgiy starshe na', age, 'moloje georgia na ', age)
+#Задача-2: Напишите программу, которая спрашивает "Четные или нечетные?", в зависимости от ответа,
+# используя цикл с предусловием while или for in
+# вывести в одну строку через пробел соотвествующие числа от 0 до 20
+a = 1
+b = 2
+print('nechet')
+while a <= 20:
+     print(a)
+     a = a + 2
+print("chet")
+while b <= 19:
+     print(b)
+     b = b + 2
+# Задача-1: Запросите у пользователя его возраст.
+# Если ему есть 18 лет, выведите: "Доступ разрешен",
+# иначе "Извините, пользоваться данным ресурсом можно только с 18 лет"
+age = int(input('vvedite vozrast'))
+if age >= 18:
+    print("dostup razreshen")
+else: print('dostup zapreshen')
 
+#Дано произвольное целое число, вывести самую большую цифру этого числа.
+# Например, дается x = 58375.
+# Нужно вывести максимальную цифру в данном числе, т.е. 8.
+# Подразумевается, что мы не знаем это число заранее.
+# Число приходит в виде целого беззнакового.
+# Подсказки:
+# * постарайтесь решить задачу с применением арифметики и цикла while;
+# * при желании и понимании решите задачу с применением цикла for.
 
-
-d = input('введите GOD')
-c = input('введите BOZ')
-d, c = c, d
-print('d =', d)
-print('c = ', c)
-
-print('reshaem uravnenie ax2+bx+c=0')
-a = input('znachenie a')
-b = input('znachenie b')
-c = input('znachenie c')
-a = float(a)
-b = float(b)
-c = float(c)
-discriminant = b**2 - 4*a*c
-print('discriminant' + str(discriminant))
-if discriminant < 0:
-    print('kornei net')
-elif discriminant == 0:
-    x = -b/(2 * a)
-    print('x= ' + str(x))
-else:
-    x1 = (-b + discriminant ** 0.5) / (2 * a)
-    x2 = (-b - discriminant ** 0.5) / (2 * a)
-    print('x₁ = ' + str(x1))
-    print('x₂ = ' + str(x2))
-
-
-
-
-
-
+a = int(input('chislo-'))
+n = a%10
+a = a//10
+while a > 0:
+    if a%10 > n:
+        n =  a%10
+    a = a//10
+print(n)
